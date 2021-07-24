@@ -1,0 +1,38 @@
+{
+	"name": "hentaits-api",
+	"version": "1.0.0",
+	"main": "src/app.ts",
+	"license": "MIT",
+	"author": "asusguy94",
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"start": "node dist/app.js",
+		"dev": "ts-node .",
+		"docker:build": "docker build -t asusguy94/hentaits-backend:latest .",
+		"docker:push": "docker push asusguy94/hentaits-backend:latest"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"cors": "^2.8.5",
+		"dayjs": "^1.10.6",
+		"express": "^4.17.1",
+		"ffmpeg-extract-frame": "^1.0.2",
+		"get-video-dimensions": "^1.0.0",
+		"get-video-duration": "^3.1.0",
+		"joi": "^17.4.0",
+		"mariadb": "^2.5.4",
+		"node-fetch": "^2.6.1",
+		"rimraf": "^3.0.2",
+		"sharp": "^0.28.3"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.11",
+		"@types/express": "^4.17.13",
+		"@types/node": "^16.0.0",
+		"@types/node-fetch": "^2.5.10",
+		"@types/rimraf": "^3.0.0",
+		"@types/sharp": "^0.28.4",
+		"ts-node": "^10.0.0",
+		"typescript": "^4.3.5"
+	}
+}
